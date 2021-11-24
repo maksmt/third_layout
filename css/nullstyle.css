@@ -73,5 +73,10 @@ h6 {
     font-size: inherit;
     font-weight: inherit;
 }
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
 /*--------------------*/
