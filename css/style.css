@@ -428,8 +428,10 @@ footer {
     justify-content: center;
 }
 .slider {
+    /* max-width: 1500px; */
     position: relative;
     margin: -60px 40px 30px 0;
+    overflow-y: hidden;
 }
 .slider .slick-arrow {
     position: absolute;
@@ -461,12 +463,12 @@ footer {
     visibility: hidden;
     overflow-y: auto;
     overflow-x: hidden;
-    z-index: 1005;
     transition: all 0.8s ease 0s;
 }
 .popup.open {
     opacity: 1;
     visibility: visible;
+    z-index: 1005;
 }
 .popup-body {
     display: flex;
