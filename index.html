@@ -49,13 +49,16 @@
         </menu>
 
         <main>
+            <div class="wrapper-slider">
 
-            <div class="slider">
-                <div class="slider__item">
-                    <img src="/img/slide_!.png" alt="">
-                </div>
-                <div class="slider__item">
-                    <img src="/img/slide_2.png" alt="">
+                <div class="slider">
+
+                    <div class="slider__item">
+                        <img src="/img/slide_!.png" alt="Error">
+                    </div>
+                    <div class="slider__item">
+                        <img src="/img/slide_2.png" alt="Error">
+                    </div>
                 </div>
             </div>
 
@@ -221,21 +224,25 @@
         <div id="popup" class="popup">
             <div class="popup-body">
                 <div class="popup-content">
-                    <a href="" class="popup-close close-popup">Х</a>
+                    <a href="" class="popup-close close-popup"><img src="/img/close-form.png" alt=""
+                            class="popup-close-img"></a>
 
                     <form action="#" method="post" id="form" class="feedback-form">
                         <h1 class="form-name">Обратная связь</h1>
                         <div class="form-items">
                             <label for="formName" class="formlabel ">Ваше имя*</label>
-                            <input id="formName" type="text" name="name" class="form__input _req">
+                            <input id="formName" type="text" name="name" class="form__input _req _email"
+                                placeholder="Поле обязательно для ввода">
                         </div>
                         <div class="form-items">
                             <label for="formPhone" class="formlabel">Телефон*</label>
-                            <input id="formPhone" type="number" name="number" class="form__input _req">
+                            <input id="formPhone" type="number" name="number" class="form__input _req"
+                                placeholder="Поле обязательно для ввода">
                         </div>
                         <div class="form-items">
                             <label for="formEmail" class="formlabel">Email*</label>
-                            <input id="formEmail" type="text" name="email" class="form__input _req" id="email">
+                            <input id="formEmail" type="text" name="email" class="form__input _req" id="email"
+                                placeholder="Поле обязательно для ввода">
                         </div>
                         <div class="form-items">
                             <label for="formMessage" class="formlabel">Сообщение</label>

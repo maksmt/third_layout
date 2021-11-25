@@ -31,7 +31,7 @@ header {
     line-height: 46px;
     text-align: left;
     position: relative;
-    margin: 2px 0px 0 724px;
+    margin: -26px 0px 0 720px;
     min-width: 306px;
     color: #767676;
     letter-spacing: 0.025em;
@@ -41,7 +41,7 @@ header {
 }
 .popup-link {
     position: absolute;
-    margin: 90px 0px 0px -210px;
+    margin: 59px 0px 0px -210px;
     width: 171px;
     height: 22px;
     color: #767676;
@@ -72,7 +72,6 @@ menu {
 .menu-links li:hover {
     border-bottom: 3px solid #fff;
     line-height: 1;
-    line-width: 1px;
 }
 .bortik {
     padding: 0px 19px;
@@ -81,8 +80,8 @@ menu {
     font-size: 30px;
 }
 main {
-    position: relative;
     flex: 1 1 auto;
+    text-align: center;
 }
 
 .content {
@@ -90,15 +89,11 @@ main {
     justify-content: center;
 }
 
-.left {
-}
 .price {
     position: absolute;
-    margin: 390px 790px 0px 0px;
+    margin: 380px 810px 0px -55px;
 }
 
-.price-logo {
-}
 .price-img {
     margin: 0 0px 0px 28px;
 }
@@ -119,12 +114,13 @@ main {
 .menu {
     position: absolute;
     width: 178px;
-    margin: 26px 822px 0 20px;
+    margin: 16px 822px 0 -20px;
 }
 .menu a {
     text-decoration: none;
 }
 .menu li {
+    white-space: wrap;
     list-style: none;
 }
 .menu-list {
@@ -132,12 +128,10 @@ main {
     flex-direction: column;
     max-width: content;
     position: relative;
+    text-decoration: none;
 }
-.menu-list:hover {
-}
-.menu-list > li:hover {
-    text-decoration: underline;
-}
+
+
 .menu-list > li:hover .sub-menu__list {
     display: block;
     color: black;
@@ -152,6 +146,15 @@ main {
 }
 .menu-link {
     color: #8f8f8f;
+    text-decoration: none;
+    white-space: nowrap;
+}
+#byt {
+    white-space: nowrap;
+}
+.menu-link:hover {
+    text-decoration: underline;
+    white-space: nowrap;
 }
 .sub-menu__list {
     display: none;
@@ -161,11 +164,14 @@ main {
     padding: 0 0 0 20px;
     font-size: 14px;
     letter-spacing: 0.35px;
+    text-decoration: none;
 }
 .sub-menu__list li {
     list-style: disc;
     color: #787878;
-    text-decoration: none;
+}
+.sub-menu__list li:hover {
+    text-decoration: underline;
 }
 .sub-menu-link {
     color: #8f8f8f;
@@ -177,7 +183,8 @@ main {
     display: flex;
     width: 350px;
     position: absolute;
-    margin: 0 0 0 20px;
+    margin: -20px 0px 0 -17px;
+    letter-spacing: 0.35px;
 }
 .breadcrumbs-main {
     color: #767676;
@@ -188,6 +195,7 @@ main {
     text-decoration: underline;
 }
 .breadcrumbs-byt {
+    color: #767676;
 }
 .bortik1 {
     display: flex;
@@ -198,8 +206,7 @@ main {
 .catalog {
     display: flex;
     position: absolute;
-    margin: 50px 0px 0px 210px;
-    /* margin: 0 auto; */
+    margin: 20px 0px 0px 165px;
     max-height: 780px;
 }
 .catalog-items {
@@ -300,7 +307,7 @@ main {
     justify-content: center;
     border-top: 1px solid #696969;
     padding: 20px 0 0px 0;
-    margin: 941px 0px 0 257px;
+    margin: 941px 0px 0 212px;
     width: 770px;
     position: relative;
 }
@@ -329,7 +336,6 @@ main {
 }
 .pages-link {
     display: block;
-
     margin: 860px 0 0px 10px;
     position: absolute;
 }
@@ -344,8 +350,7 @@ main {
     letter-spacing: 22px;
     margin: 0 0px 0 330px;
 }
-.pages-number li {
-}
+
 .pages-number li:hover {
     cursor: pointer;
     color: #444444;
@@ -410,7 +415,16 @@ footer {
     text-decoration: underline;
     color: #ffffff;
 }
-
+/* слайдер */
+.slider {
+    position: relative;
+    margin: -60px 40px 30px 0;
+    overflow-y: hidden;
+}
+.wrapper-slider {
+    width: 1400px;
+    margin: 0 auto;
+}
 /* оболонка */
 .slick-list {
     overflow: hidden;
@@ -427,29 +441,26 @@ footer {
     flex-direction: row;
     justify-content: center;
 }
-.slider {
-    /* max-width: 1500px; */
-    position: relative;
-    margin: -60px 40px 30px 0;
-    overflow-y: hidden;
-}
+
 .slider .slick-arrow {
-    position: absolute;
-    top: 50%;
+    top: 47%;
+    margin: 0 auto;
     z-index: 1001;
     font-size: 0;
     width: 34px;
     height: 61px;
+    position: relative;
 }
 .slider .slick-arrow.slick-prev {
-    left: 20%;
+    position: absolute;
+    left: 189px;
     background: url("/img/slider_button.png") 0 0/100% no-repeat;
 }
 .slider .slick-arrow.slick-next {
-    right: 20%;
+    position: absolute;
+    top: 216px;
+    right: 219px;
     background: url("/img/slider_button_right.png") 0 0/100% no-repeat;
-}
-.slider__item {
 }
 
 .popup {
@@ -475,11 +486,16 @@ footer {
     min-height: 100%;
     align-items: center;
     justify-content: center;
-    transition: all 0.8s ease 0s;
 }
 .popup-content {
+    width: 466px;
 }
-
+.popup-close {
+    display: flex;
+    margin: 0 0 0 466px;
+    width: 27px;
+    height: 27px;
+}
 .feedback-form {
     display: flex;
     flex-direction: column;
@@ -512,14 +528,33 @@ footer {
     border: 1px solid #c3c3c3;
     background-color: #ffffff;
     margin-top: 10px;
+    padding-left: 6px;
 }
 textarea.form__input {
     display: inline-block;
     min-width: 339px;
     min-height: 140px;
     resize: vertical;
+    padding-top: 4px;
 }
-#email {
+.form__input._error {
+    content: "поле обязательно для ввода";
+}
+
+input:focus {
+    box-shadow: inset 0 0 13px rgba(228, 106, 106, 0.75);
+    border: 1px solid #ff8383;
+}
+input::placeholder {
+    font-family: "PT Sans";
+    font-size: 0px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-style: italic;
+}
+input:focus::placeholder {
+    font-size: 14px;
+    color: #dc7f7f;
 }
 
 .form-button {
@@ -533,4 +568,7 @@ textarea.form__input {
     text-transform: uppercase;
 }
 .close-popup {
+    width: 27px;
+    height: 27px;
+    background: #777777;
 }
